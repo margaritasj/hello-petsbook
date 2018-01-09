@@ -22,9 +22,7 @@
       <div class="container">
         <div class="row">
           <div class="col s2 m12 l12">
-            <div>
-              <label class="label-icon" for="return"><i class="material-icons">arrow_back</i></label>
-            </div>
+            <label class="label-icon return-icon" for="return"><i class="material-icons padding">arrow_back</i></label>
           </div>
           <div class="col s10 m12 l12">
            <div class="input-field">
@@ -35,39 +33,38 @@
         </div>
         <div class="row">
           <div class="col s4 m12 l12">
-            <div class="avatar">
-              <img src="../assets/images/dog-perfil.jpg" alt="" class="responsive-img avatar circle">
+            <div class="avatar-container">
+              <img src="../assets/images/dog-perfil.jpg" alt="" class="avatar-lg circle">
             </div>
           </div>
           <div class="offset-s1 col s3">
-            <div class="followers-container">
+            <div class="followers-container center-align">
               <span class="counter" data-followers="20">20</span>
               <p>Huellidores</p>
             </div>
           </div>
           <div class="col s4">
-            <div class="following-container">
+            <div class="following-container center-align">
               <span class="counter" data-following="20">20</span>
               <p>Huellidos</p>
             </div>
           </div>
-          <div class="offset-s5 col s4">
-              <div class="selector">
-                <span>Me adoptaron</span>
+          <!-- indicador de estado de adopcion -->
+          <div class="offset-s5 col s8">
+            <div class="selector">
+              <span>Me adoptaron</span>
+              <div class="switch">
+                <label>
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                </label>
               </div>
+            </div>
           </div>
-          <div class="col s3">
-            <div class="switch">
-                  <label>
-                    <input type="checkbox">
-                    <span class="lever"></span>
-                  </label>
-                </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s8">
-            <h5>HUELLITA</h5>
+          <div class="col s4">
+            <span class="username">
+              <p>Huellita</p>
+            </span>
           </div>
         </div>
         <div class="row">
@@ -76,14 +73,52 @@
           </div>
         </div>
       </div>
+      <!-- mini galeria de fotos -->
       <div class="container">
         <div class="row">
           <div class="col s12 m12 l12">
             <div class="photos-container">
-             <figure class="square"></figure>
-             <figure class="square"></figure>
-             <figure class="square"></figure>
+             <figure class="square z-depth-3"></figure>
+             <figure class="square z-depth-3"></figure>
+             <figure class="square z-depth-3"></figure>
             </div>
+          </div>
+        </div>
+        <!-- tabs -->
+        <div class="row">
+          <div class="col s12 m12 l12">
+              <ul id="tabs-swipe" class="tabs tab-btn">
+                  <li class="tab col s4"><a href="#notices">huelliNotas</a></li>
+                  <li class="tab col s4"><a class="active" href="#photos">HuelliFotos</a></li>
+                  <li class="tab col s5"><a href="#contacts">HuelliAmigos</a></li>
+                </ul>
+                <div id="notices" class="col s12"></div>
+                <div id="photos" class="col s12"></div>
+                <div id="contacts" class="col s12"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <div class="row">
+              <div class="input-field col s12 pull-right ">
+                <textarea id="textarea-1" class="materialize-textarea"></textarea>
+                <label for="textarea-1"><img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs">Mis HuelliPensamientos</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 lg12">
+              <div class="card horizontal padding 2em">
+                  <!-- Card Content -->
+                <div class="avatar-container">
+                  <img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs">
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -91,11 +126,11 @@
 	
 
 	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
 	<!--Import materialize.js-->
-	<script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
+	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
 	<!-- app.js-->
-	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="../js/profile.js"></script>
 </body>
 
 </html>
