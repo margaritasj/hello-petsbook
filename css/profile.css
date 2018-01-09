@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.photos-container {
+  display: flex;
+  
+}
+.square {
+  outline: 1px solid black;
+  height: 8em;
+  width: 8em;
+}
