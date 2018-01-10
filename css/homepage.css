@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Clases Reutilizables*/
+.padding2em {
+  padding: 2em;
+}
+.padding1em {
+  padding: 1em;
+}
+.padding {
+  padding-top: 1.2em;
+}
+/* */
+.return-icon:hover {
+  color: #1de9b6;
+}
+/* Clases para los avatares*/
+.avatar-lg {
+  width: 130px;
+  height: 120px;
+  border: 2px dashed #1de9b6;
+}
+.avatar-xs {
+  width: 50px;
+  height: 50px;
+  border: 2px dashed #1de9b6;
+  margin-right: 0.2em;
+}
+/* Clases para los contenedor de posteo */
+.container {
+  border: 2px dashed #1de9b6;
+  height: 22vh;
+
+}
