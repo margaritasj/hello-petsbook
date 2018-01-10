@@ -29,11 +29,10 @@
   margin: 8px;
 }
 .upload-icon {
-  border: none;
-  background-color: transparent;
-  padding: 0.2em;
+  background-color: #1de9b6;
+
 }
 .upload-icon:hover {
-  color: #1de9b6; 
-  background-color: transparent;
+  color: #fff; 
+  background-color: #1de9b6;
 }
