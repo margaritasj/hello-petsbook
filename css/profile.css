@@ -159,6 +159,12 @@ label.label-icon:focus {
   background-color: #1de9b6;
 }
 
+.wrap {
+  word-wrap: break-word; 
+  max-width:100%; 
+  width:100%;
+}
+
 /*Medias queries*/
 @media (min-width: 992px) {
   .avatar-lg {

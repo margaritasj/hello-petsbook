@@ -104,7 +104,7 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label {
 }
 
 img.responsive-img.logo{
-  max-width: 70%;
+  max-width: 65%;
   height: auto;
 }
 
@@ -120,6 +120,24 @@ img.responsive-img.logo{
 }
 
 
+.img-home {
+	background-image: url('../assets/images/phone.png');
+	height: 100%;
+	background-position: center 5%;
+	background-repeat: no-repeat;
+}
+
+h3 {
+	margin-top: 5rem;
+	font-size: 3rem;
+	font-weight: 800;
+	color: #ffffff;
+}
+
+img.size-logo {
+	width: 450px;
+	height: 250px;
+}
 
 /* --------------- Medias queries ---------------*/
 
@@ -141,7 +159,7 @@ img.responsive-img.logo{
 	}
 
 	img.responsive-img.logo{
-		max-width: 30%;
+		max-width: 28%;
 		height: auto;
 	}
 

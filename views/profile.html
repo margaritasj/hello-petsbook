@@ -87,7 +87,9 @@
 		<!-- mini galeria de fotos -->
 		<div class="card-panel teal accent-3">
 			<div class="photos-container">
-				<figure class="square z-depth-3"></figure>
+				<figure class="square z-depth-3 center-align">
+					<img class="square z-depth-3 center-align" src="../assets/images/selfie-mascota.jpg" alt="">
+				</figure>
 				<figure class="square z-depth-3"></figure>
 				<figure class="square z-depth-3"></figure>
 				<figure class="square z-depth-3 hide-on-small-only"></figure>
@@ -119,6 +121,7 @@
 				<div class="col s12 m12 l12">
 					<div class="row padding">
 						<div class="input-field col s12 pull-right ">
+							<br>
 							<textarea id="textarea-1" class="materialize-textarea padding">
 							</textarea>
 							<label class="padding-bottom" for="textarea-1">
@@ -126,9 +129,28 @@
 							</label>
 						</div>
 						<div class="col offset-s5 s8 m12 offset-l8 l4">
-							<button class="btn waves-effect waves-light" id="btn-photo" type="submit" name="action">
+							<button class="btn waves-effect waves-light modal-trigger" id="" type="submit" data-target="modalimg" name="action">
 								<i class="material-icons">photo</i>
 							</button>
+							<!-- Modal Structure -->
+							<div id="modalimg" class="modal">
+								<div class="modal-content">
+									<div class="file-field input-field">
+										<div class="btn">
+											<span>File</span>
+											<input type="file">
+										</div>
+										<div class="file-path-wrapper">
+											<input class="file-path validate" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button class="btn waves-effect waves-light" id="btn-addimg" type="submit" name="action">
+										<i class="material-icons">pets</i>
+									</button>
+								</div>
+							</div>
 							<button class="btn waves-effect waves-light" id="btn-post" type="submit" name="action">
 								<i class="material-icons">pets</i>
 							</button>
@@ -139,17 +161,7 @@
 			<div class="container">
 				<div class="row padding">
 					<div class="col s12 m12 l12">
-						<div class="card">
-							<!-- Card post -->
-							<div class="avatar-container-2">
-								<img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs">
-								<span>
-									<p>Huellitas</p>
-								</span>
-							</div>
-							<div class="card-content">
-								<p>esta es una publicacion de prueba</p>
-							</div>
+						<div id="publication">
 						</div>
 					</div>
 				</div>
@@ -162,7 +174,7 @@
 	<!--Import materialize.js-->
 	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
 	<!-- login.js-->
-	<script type="text/javascript" src="../js/login.js"></script>
+	<script type="text/javascript" src="../js/profile.js"></script>
 </body>
 
 </html>
