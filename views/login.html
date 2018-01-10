@@ -9,7 +9,7 @@
 	<!--Import Favicon-->
 	<link href="../assets/images/favicon.png" type="image/x-icon" rel="shortcut icon" />
 	<!--Import Icons-->
-	<link href="../https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	<!--Import materialize.css-->
 	<link href="../vendors/materialize/css/materialize.css" type="text/css" rel="stylesheet" />
 	<!-- Import style.css-->
@@ -20,19 +20,17 @@
 	<!-- Vista login-->
 	<section>
 		<div class="container">
-			<div class="row">
+			<div class="row center-align">
 				<div class="col s12 m12 l12">
-					<div class="logo flex-center">
-						<img class="responsive-img" src="../assets/images/logo.png" alt="">
-					</div>
+					<img class="responsive-img logo" src="../assets/images/logo.png" alt="">
 				</div>
 			</div>
 			<div class="row">
 				<form class="col offset-s1 s10 m12 l12">
 					<div class="row">
 						<div class="input-field col s12 m12 l12">
-							<input id="username" class="validate" type="text" data-length="10">
-							<label for="input_text">Usuario huellita:</label>
+							<input id="email" class="validate" type="email">
+							<label for="email">Correo huellita:</label>
 						</div>
 					</div>
 					<div class="row">
@@ -42,28 +40,33 @@
 						</div>
 					</div>
 				</form>
-				<div class="row">
-					<div class="col offset-s4 s4 m12 l12">
-						<button class="btn waves-effect waves-light" type="submit" name="action">Iniciar sesión</button>
+				<div class="row center-align">
+					<div class="col offset-s4 s4 m12 offset-l4 l4">
+						<button class="btn waves-effect waves-light" id="btn-login" type="submit" name="action">Iniciar sesión</button>
 					</div>
 				</div>
 			</div>
 			<div class="row center-align">
-				<div class="col offset-s3 s6 m12 l12">
-					<div class="">
+				<div class="col offset-s2 s8 m12 l12">
+					<span>
 						<a href="#">Crear una cuenta nueva</a>
-					</div>
+					</span>
 				</div>
 			</div>
 		</div>
 	</section>
 
-
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
 	<!--Import materialize.js-->
 	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
-	<!-- app.js-->
+	<!--Import Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+	<!-- login.js-->
 	<script type="text/javascript" src="../js/login.js"></script>
 </body>
 
