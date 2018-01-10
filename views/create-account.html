@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>PETSBOOK</title>
+	<!--Import Favicon-->
+	<link href="../assets/images/favicon.png" type="image/x-icon" rel="shortcut icon" />
+	<!--Import Icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!--Import materialize.css-->
+	<link href="../vendors/materialize/css/materialize.css" type="text/css" rel="stylesheet" />
+	<!-- Import style.css-->
+	<link href="../css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="">
+	<!-- Vista login-->
+	<section>
+		<div class="container">
+			<div class="row center-align">
+				<div class="col s12 m12 l12">
+					<img class="responsive-img logo" src="../assets/images/isologo2.png" alt="">
+				</div>
+			</div>
+			<div class="row">
+				<form class="col offset-s1 s10 m12 l12">
+					<div class="row">
+						<div class="input-field col s12 m12 l12">
+							<input id="email" class="validate" type="email">
+							<label for="email">Correo huellita:</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 m12 l12">
+							<input id="password" class="validate" type="password">
+							<label for="password">Contraseña</label>
+						</div>
+					</div>
+				</form>
+				<div class="row center-align">
+					<div class="col offset-s4 s4 m12 offset-l4 l4">
+						<button class="btn waves-effect waves-light" id="btn-login" type="submit" name="action">Iniciar sesión</button>
+					</div>
+				</div>
+			</div>
+			<div class="row center-align">
+				<div class="col offset-s2 s8 m12 l12">
+					<span>
+						<a href="#">Crear una cuenta nueva</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+	<!--Import materialize.js-->
+	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+	<!--Import Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<!-- login.js-->
+	<script type="text/javascript" src="../js/register.js"></script>
+</body>
+
+</html>

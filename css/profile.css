@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background-color: #1de9b6;
+  color:#ffffff;
+  font-weight: 600;
+}
+
+
+/* Clases Reutilizables*/
+
+.padding2em {
+  padding: 2em;
+}
+
+.padding1em {
+  padding: 1em;
+}
+
+.padding-arrow{
+  padding: 0 1em;
+}
+
+.margin-top{
+  margin-top: 3rem;
+}
+
+/* */
+
+.return-icon:hover {
+  color: #1de9b6;
+}
+
+
+/* Clases para los avatares*/
+
+.avatar-lg {
+  width: 130px;
+  height: 130px;
+  border: 0.3rem dashed #1de9b6;
+  margin-top: 1rem;
+}
+
+.avatar-xs {
+  width: 50px;
+  height: 50px;
+  border: 2px dashed #1de9b6;
+}
+
+
+/* Clases para los contadores */
+
+.counter {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.followers-container p,
+.following-container p {
+  font-weight: 500;
+}
+
+.padding {
+  padding-top: 1.2em;
+}
+
+
+/* Clase para la insignia */
+
+.selector {
+  border: 2px solid #1de9b6;
+  border-radius: 10px;
+  display: inline-flex;
+  padding: 0.5em;
+}
+
+
+/* Clase para el nombre de usuario */
+
+.username p {
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+
+/* Clases para contenedor de fotos*/
+
+.photos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.square {
+  background-color: #ffffff;
+  height: 8rem;
+  width: 8em;
+  margin: 0 2px;
+}
+
+
+/* publicaciones */
+
+.avatar-container-2 {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+label.label-icon {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+label.label-icon:hover,
+label.label-icon:focus {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.tabs .tab a {
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #1de9b6;
+}
+
+.tabs .indicator {
+  background-color: #1de9b6;
+}
+
+.padding-bottom {
+  padding-bottom: 1rem;
+}
+
+.btn {
+	background-color: #1de9b6;
+	font-weight: 600;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #1de9b6;
+}
+
+.wrap {
+  word-wrap: break-word; 
+  max-width:100%; 
+  width:100%;
+}
+
+/*Medias queries*/
+@media (min-width: 992px) {
+  .avatar-lg {
+    width: 200px;
+    height: 200px;
+    border: 0.3rem dashed #1de9b6;
+    margin-top: 2rem;
+  }
+  .counter {
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  .margin-top{
+    margin-top: 1rem;
+  }
+  .padding {
+    padding-top: 1.5rem;
+  }
+  .username p {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+  }
+  .square {
+    background-color: #ffffff;
+    height: 15rem;
+    width: 15em;
+    margin: 0 1rem;
+  }
+  .tabs .tab a {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+}

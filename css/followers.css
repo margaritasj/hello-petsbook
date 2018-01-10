@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Clases Reutilizables */
+.padding1em {
+  padding: 1em;
+}
+/* Clases Personalizadas */
+.padding {
+  padding-top: 1.2em;
+}
+.return-icon:hover {
+  color: #1de9b6;
+}
+.avatar {
+  box-shadow: 2px 2px 5px #1de9b6;
+}
+.username {
+  font-size: 20px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.follow-btn {
+  box-shadow: 2px 2px 5px rgb(130, 130, 130);
+  background-color: #1de9b6;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5em 1em 0.5em 1em;
+}
+.follow-btn:hover {
+  border: 2px solid #1de9b6;
+  background-color: #ffffff; ;
+  color: #1de9b6;
+  transition: all .6s ease-in-out;
+}
