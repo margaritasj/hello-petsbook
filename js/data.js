@@ -1,32 +1,36 @@
-var $data = {
-  'contacts': {
+var data = {
+  'friends': {
     'followers': [
       {
         'username': 'Bernardino',
         'dog breed': 'Beagle',
         'age': '2 años',
-        'adopted': 'no'
+        'adopted': 'no',
+        'photo': '../assets/images/pets.png'
       },
 
       {
         'username': 'princesa',
         'dog breed': 'Caniche',
         'age': '1 año',
-        'adopted': 'yes'
+        'adopted': 'yes',
+        'photo': '../assets/images/pets.png'
       },
 
       {
         'username': 'Cataleya',
         'dog breed': 'Chihuahua',
         'age': '4 año',
-        'adopted': 'yes'
+        'adopted': 'yes',
+        'photo': '../assets/images/pets.png'
       },
 
       {
         'username': 'Chavo',
         'dog breed': 'Grand Danes',
         'age': '6 año',
-        'adopted': 'no'
+        'adopted': 'no',
+        'photo': '../assets/images/pets.png'
       }
     ],
 
