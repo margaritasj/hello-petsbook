@@ -64,7 +64,23 @@ body {
   margin: 8px;
 }
 /* publicaciones */
-.avatar-container-2 {
+.card-container {
+  padding: 2em 1em 2em 1em;
+}
+.user-container {
   padding-left: 2em;
   padding-right: 2em;
+}
+.username {
+  
+}
+.date {
+  font-size: 11px;
+}
+.text-container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.tab-btn li:a {
+  color: #1de9b6;
 }

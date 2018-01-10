@@ -37,13 +37,13 @@
               <img src="../assets/images/dog-perfil.jpg" alt="" class="avatar-lg circle">
             </div>
           </div>
-          <div class="offset col s4">
-            <div class="followers-container padding1em center-align">
+          <div class="offset-s1 col s4">
+            <div class="followers-container padding2em center-align">
               <span class="counter" data-followers="20">20</span>
               <p>Huellidores</p>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s3">
             <div class="following-container padding1em center-align">
               <span class="counter" data-following="20">20</span>
               <p>Huellidos</p>
@@ -101,13 +101,16 @@
           </div>
         </div>
       </div>
+      <!-- area para postear -->
       <div class="container">
         <div class="row">
           <div class="col s12 m12 l12">
             <div class="row">
               <div class="input-field col s12 pull-right ">
-                <textarea id="textarea-1" class="materialize-textarea"></textarea>
-                <label for="textarea-1"><img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs">Mis HuelliPensamientos</label>
+                <div class="post-container">
+                  <textarea id="textarea-1" class="materialize-textarea"></textarea>
+                  <label for="textarea-1"><img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs">Mis HuelliPensamientos</label>
+                </div>
               </div>
             </div>
           </div>
@@ -118,13 +121,15 @@
           <div class="col s12 m12 lg12">
               <div class="card horizontal card-container">
                   <!-- Card Content -->
-                <div class="avatar-container-2">
-                  <img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs">
-                  <span><p>Huellitas</p></span>
-                  <span><p>Hoy a las 12:30</p></span>
+                <div class="user-container center-align">
+                  <div class="avatar">
+                    <img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs">
+                  </div>
+                  <span data-username="huellitas"><p>Huellitas</p></span>
+                  <span class="date" data-date="">Hoy a las 12:30</span>
                 </div>
-                <div class="text-container offset">
-                  <p>esta es una publicacion de prueba</p>
+                <div class="text-container">
+                  <span data-post="">Bienvenidos a PetsBook</span>
                 </div>
               </div>
           </div>
