@@ -28,3 +28,7 @@
   width: 8em;
   margin: 8px;
 }
+.upload-icon:hover {
+  color: #1de9b6; 
+
+}
