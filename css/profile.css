@@ -64,7 +64,17 @@ body {
   margin: 8px;
 }
 /* publicaciones */
+.card-container {
+  padding: 2em 1em 2em 1em;
+}
 .avatar-container-2 {
   padding-left: 2em;
   padding-right: 2em;
+}
+.text-container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.tab-btn li:a {
+  color: #1de9b6;
 }
