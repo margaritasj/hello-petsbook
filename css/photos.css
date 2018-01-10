@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Clases Reutilizables */
+.paddingtop {
+  padding-top: 1.2em;
+}
+.return-icon:hover{
+  color: #1de9b6;       
+}
+/* Clases Personalizadas */
+.title:first-child {
+  text-shadow: 1px 1px #000;
+}
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.outline {
+  outline: 1px solid #000;
+} 
+.square {
+  background-color: transparent;
+  height: 8em;
+  width: 8em;
+  margin: 8px;
+}
