@@ -5,5 +5,5 @@ $(document).ready(function() {
   $avatar = $('avatar');
   $followBtn = $('follow-btn');
 
-  
+  $username.load(data, )
 });
