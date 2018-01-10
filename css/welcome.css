@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-weight: 500;
+}
+/* Clases Reutilizables */
+.padding1em {
+  padding: 1em;
+}
+.padding2em {
+  padding: 2em;
+}
+.text-color {
+  color: #1de9b6;
+}
+/* Clases Personalizadas */
+.principal-text {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.next-btn {
+  box-shadow: 2px 2px 5px rgb(130, 130, 130);
+  background-color: #1de9b6;
+  color: #ffffff;
+  padding: 0.5em 1em 0.5em 1em;
+}
+.next-btn:hover {
+  border: 2px solid #1de9b6;
+  background-color: #ffffff; ;
+  color: #1de9b6;
+  transition: all .6s ease-in-out;
+}
+/* Vista upload */
+.photo-container , .voice-container {
+  border: 2px dashed #1de9b6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+  letter-spacing: 2px;
+}
+.photo-btn, .voice-btn  {
+  background-color: #1de9b6;
+  margin-bottom: 10px;
+}
+.photo-btn:hover, .voice-btn:hover  {
+  border: 
+  background-color: #fff;
+  color: #1de9b6
+}
+.photo-btn i, .voice-btn i {
+  font-size: 30px;
+}

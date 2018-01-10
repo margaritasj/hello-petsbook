@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>PETSBOOK</title>
+	<!--Import Favicon-->
+	<link href="../assets/images/favicon.png" type="image/x-icon" rel="shortcut icon" />
+	<!--Import Icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!--Import materialize.css-->
+	<link href="../vendors/materialize/css/materialize.css" type="text/css" rel="stylesheet" />
+	<!-- Import style.css-->
+	<link href="../css/welcome.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Vista register-->
+	<section>
+		<div class="container padding1em">
+			<div class="row">
+				<div class="col s12 m12 l12 center-align">
+				<span class="principal-text padding1em"><p>Hola Huellita!!!</p>
+				<p>Primero empezemos por conocerte...</p></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m12 l12 center-align">
+					<div class="row">
+						<div class="input-field offset-s1 col s10 ">
+							<select id="input-1" padding2em>
+								<option value="" disabled selected>Selecciona una opcion</option>
+								<option value="dog">Soy un perro</option>
+								<option value="cat">Soy un gato</option>
+								<option value="rabbit">Soy un conejo</option>
+								<option value="hamster">Soy un hámster</option>
+							</select>
+							<label>¿que tipo de compañero eres?</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field offset-s1 col s10 padding2em">
+							<select id="input-2">
+								<option value="" disabled selected>Selecciona una opcion</option>
+								<option value="dog">Soy un perro</option>
+								<option value="cat">Soy un gato</option>
+								<option value="rabbit">Soy un conejo</option>
+								<option value="hamster">Soy un hámster</option>
+							</select>
+							<label class="text-color">¿de que raza eres?</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field offset-s1 col s10 padding2em">
+							<select id="input-3" >
+								<option value="" disabled selected>Selecciona una opcion</option>
+								<option value="female">Soy una hembra</option>
+								<option value="male">Soy un macho</option>
+							</select>
+							<label>¿eres macho u hembra?</label>
+						</div>
+					</div>
+					<div class="row">
+        		<div class="input-field offset-s1 col s10 padding2em">
+          		<input placeholder="Ingresa tu edad" id="age" type="text" class="validate">
+							<label class="text-color">¿Cuantos años tienes?</label>
+						</div>
+        	</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="offset-s8 col s4 push-right">
+					<button id="next" type="btn" class="next-btn">SIGUIENTE</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+	<!--Import materialize.js-->
+	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+	<!-- app.js-->
+	<script type="text/javascript" src="../js/welcome.js"></script>
+</body>
+
+</html>
