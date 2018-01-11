@@ -43,7 +43,7 @@
 					</div>
 					<div class="row">
 						<div class="input-field offset-s1 col s10 m12 l12 padding2em">
-              <input placeholder="fijo o celular" id="age" type="text" class="validate">
+              <input placeholder="fijo o celular" id="age" type="number" class="validate"><!-- type:number para q solo acepte numeros-->
               <label>¿Tiene algún número para llamarte?</label>
 						</div>
 					</div>
@@ -55,11 +55,15 @@
               <div class="file-field input-field">
                 <div id="photo-upload" class="btn photo-btn">
                   <span><i class="material-icons">add_a_photo</i></span>
-                  <input type="file">
+                  <input id="subir-fotos" type="file"><!-- agregando funcionalidad para agrgar foto-->
                 </div>
                 <div class="file-path-wrapper ">
                   <P>Sube una foto</P>
                 </div>
+								<!-- agrgando un div contenedor-->
+								<div class="col s12 contenedor-img">
+									<!-- aqui fotos-->
+								</div>
               </div>
             </form>
           </div>
