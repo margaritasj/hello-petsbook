@@ -1,37 +1,4 @@
 $(document).ready(function() {
-  var $emailLogin = $('#email-login');
-  var $passwordLogin = $('#password-login');
-  var $btnLogin = $('#btn-login');
-
-  var validateEmail = false;
-  var validatePassword = false;
-
-  // Función para habilitar btón
-
-  $emailLogin.on('input', function() {
-    if ($(this).val() === localStorage.email) {
-    // alert('pasa');
-      validateEmail = true;
-    }
-  });
-
-  $passwordLogin.on('input', function() {
-    if ($(this).val() === localStorage.password1) {
-    // alert('esto tambien pasa');
-      validatePassword = true;
-      $btnLogin.removeClass('disabled');
-    }
-  });
-
-  // Función para comparar los datos ingresados del usuario.
-  $btnLogin.on('click', function() {
-    event.preventDefault();
-    if (validateEmail && validatePassword) {
-      window.location.href = '../views/profile.html';
-    } else {
-      alert('Oh no! Necesitas registrate');
-    }
-  });
   // Initialize Firebase
   var config = {
     apiKey: 'AIzaSyD1UOABdrBuyzKqY_NDa2WGwZAH45L76UQ',
@@ -43,16 +10,88 @@ $(document).ready(function() {
   };
   firebase.initializeApp(config);
 
-  /* -------- Para acceder con Gmail -------- */
-  var btnLogingm = $('#btn-logingm');
-  btnLogingm.click(function() {
-    var provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider).then(function(result) {
+  // hacemos login mediante email y password
+  var btnLogin = $('#btn-login');
+
+  function loginEmailPassword() {
+    var email = $('#email-login').val();
+    var password = $('#password-login').val();
+
+    console.log($('#email-login').val());
+    console.log($('#password-login').val());
+
+    firebase.auth().signInWithEmailAndPassword(email, password).then(function(result) {
+      window.location.href = '../views/profile.html';
+    }).catch(function(error) {
+      alert('Oh no! esta cuenta no se encuentra registrada, por favor verifica tu email o contraseña');
+
+      /* '<div id='modal1' class='modal'>' + '<div class='modal-content'>' + '<h4>Modal Header</h4>' + '<p>A bunch of text</p>' + '</div>' + '<div class='modal-footer'>' + '</div>' + '</div>' */
+    });
+  }
+
+  btnLogin.click(function() {
+    event.preventDefault();
+    loginEmailPassword();
+  });
+
+  // hacemos login con las distintas redes sociales
+  $('#btn-fb').click(function() {
+    loginRedesSociales('facebook');
+  });
+  $('#btn-tw').click(function() {
+    loginRedesSociales('twitter');
+  });
+  $('#btn-gm').click(function() {
+    loginRedesSociales('google');
+  });
+
+  function loginRedesSociales(redSocial) {
+    switch (redSocial) {
+    case 'facebook':
+      var provider = new firebase.auth.FacebookAuthProvider();
+      break;
+    case 'twitter':
+      var provider = new firebase.auth.TwitterAuthProvider();
+      break;
+    case 'google':
+      var provider = new firebase.auth.GoogleAuthProvider();
+      break;
+    }
+  }
+  /* firebase.auth().signInWithPopup(provider).then(function (result) {
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    // ...
+  }).catch(function (error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });*/
+
+  firebase.auth().signInWithRedirect(provider);
+  firebase.auth().getRedirectResult().then(function(result) {
+    if (result.credential) {
       // This gives you a Google Access Token. You can use it to access the Google API.
       var token = result.credential.accessToken;
-      // The signed-in user info.
-      var user = result.user;
       // ...
-    });
+    }
+    // The signed-in user info.
+    var user = result.user;
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
   });
 });

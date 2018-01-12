@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     $('#file').hide();
 
-    $('input[type=file]').change(function () {
+    $('input[type=file]').change(function() {
       var file = (this.files[0].name).toString();
       var reader = new FileReader();
 
