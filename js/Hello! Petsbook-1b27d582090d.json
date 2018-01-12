@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hello-petsbook",
+  "private_key_id": "1b27d582090d036d2ce20260b81cb4f4cbf2f5af",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDPOqptS9m5qv1r\nEcoUevUDrq+5VmAm7j8Tw/6Rs1dAihIwGPgc8AIV6FdUHO7hErT7KccoktfxXxel\n4CgN0K2fooHW/yIGQ1jOuSoNoMOU8Hb1s6BoS4yI96W8qaesgb/mcwrIbNIDdojX\n8yepM5reYNQ5OgJX6F7hP1XuUJ6QJKUUCrwAdMoPh4tIvEKb8y2preabDENZJCIF\no4/3dORr5pmHLk59TOQnx8XY5NMWvehy6c23QDf+73Bn4LaywFQYEBATi4RYmVFt\nAE/R911Com8ZABPBUCIC7ZRdM2vyrLdb91JKqJj9bxNThM3esrIYYQ2PIX8TLnyY\nLlO45TVRAgMBAAECggEAO9dYEZm+tMPwzDNl5IYhLMAMFHwh5fwUkPOfFpnwTz3P\nxL3hIBIauBLQ7QQx4yLQylqlHU1SOGxaWtchGeQxzxBRaDFitOZLxd5oi2jqMZ9C\n6u7FGnj+iyrgXFuthL4vGTANZBUwjDl1iM65nD2/sgnKHwBmXtZGV8s/WENFlp/J\nHxLYkjb7W/4V8f7leSicWGnIbzMEVyYnqQ7MK37KdRLUOFTGj/0TgNTfhlXyS2Cl\n9O3Im9yULy+SBpIhaypKow2LeaqX3gDSm6otl1CQ25qdiFGKBz83wnt0W4US/8jm\n1uSHa6LnsjA0F4ZmKrhIHJJY+yJBc4p9syJ/FwLqJQKBgQD0OIxYtf/2mCXQiIlh\n3x5nMqu8vtyGPP0/w4RXGC1HRVOZ2X5yzI5iJP4tOxtLauodbzuItlzXNwK3LtGG\nDkbNk7IH6uL+QApC+dQPWyXVsLfFvSjjxl9/Bb7N2JK4wjmFZnjagSmkXdBUaG1K\n/M1ImLbqi/4LgKEalcDIL+aeAwKBgQDZOV9A2Z6XA5/frbkPZ8IZ314+kf90CNCj\nQoIPu3zUfeazSfOrvXbqd99wBM2X1Ojq9SENlntM0XN6ObFoKsn8ub4id1Sz6ui7\nk49AyDjqKqT+yH020HYtCXLp3VwLAkwDJP8C85MDAGTp6TtjpZKkZcf03WiDR7ij\nomj4STbZGwKBgQDrk1SGCeFDDBaF5f6nYuLf5vfUFEOCVXhwNngEzzR16ECxSiP4\nNqstrsNj+/zjLdlw1SgXQtmhW9YJv2aqqkDP8qUrj/6wBDQh0P0mZuTDETjjzAiS\nVnsteuxHgZ5eDDQSIvt2wlrZywi3Mxgh2mNmoLDo5GsEy2oby9JvCA2r4wKBgQCK\nIgSjjX9e0qw4phU3aaixoSwiJ99FH1Hlb6abcIM58PHicxVj0bCr+xx39GX0tiyD\nNOwW4ul3eP2w7L0W25bkgg0Zh76yRqBGn9gJvwkKR6HybvXJBJkRnJ+Zfe1JBuXl\nXgJYEyIaV4bUhD8C58gviJW17ZHHYbVVQTL1KEGbnwKBgQDe2MY5WLFgRehXYHmU\nivVhahAcpC9sDd0v/mbDic6BKL0W5cfsq0+lTWGCHOsszb0sAMP8VZMLTkhtxjSv\nZgvovC5v+xYvcnXdwB59nvEqJAyNiSF9zpPIhdSqJTDo7JNMuJ0oQeD7Pmk9rVFH\n74+TO2Mji1uOLJ/RocAaO9Vj9Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-crashreporting-nw8w4@hello-petsbook.iam.gserviceaccount.com",
+  "client_id": "101749945802802326932",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-crashreporting-nw8w4%40hello-petsbook.iam.gserviceaccount.com"
+}
