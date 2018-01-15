@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   // evento que regresa a la vista anterior
   $('#arrow-back').click(function() {
-    window.location.href = 'dashboard.html';
+    window.location.href = 'newsfeed.html';
   }),
 
 
