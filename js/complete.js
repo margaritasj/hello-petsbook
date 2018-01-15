@@ -1,17 +1,18 @@
 $(document).ready(function() {
-  $nextBtn = $('#next');
+  var $email = $('#email');
+  var $password1 = $('#password1');
+  var $password2 = $('#password2');
+  var $next = $('#next');
 
-
-  $nextBtn.click(function() {
-    window.location.href = '../views/dates.html';
+  $password2.on('input', function() {
+    if ($password1.val().length === $password2.val().length) {
+      $next.removeClass('disabled');
+    }
   });
-  // EVENTO CHANGE: Para subir fotos.
-  $('#subir-fotos').change(function(event) {
-    var fileName = event.target.files[0];
-    var reader = new FileReader();
-    reader.onload = function(event) {
-      $('.contenedor-img').append('<img class = "col s4 height= "4vh" responsive-img" src= "' + event.target.result + '"/>');
-    };
-    reader.readAsDataURL(fileName);
+
+  $next.on('click', function() {
+    localStorage.email = $email.val();
+    localStorage.password1 = $password1.val();
+    window.location.href = '../views/profile.html';
   });
 });
