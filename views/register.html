@@ -30,7 +30,7 @@
 				<div class="col s12 m12 l12 center-align">
 					<div class="row">
 						<div class="input-field offset-s1 col s10 ">
-							<select id="class" padding2em>
+							<select id="input-1" padding2em>
 								<option value="" disabled selected>Selecciona una opcion</option>
 								<option value="dog">Soy un perro</option>
 								<option value="cat">Soy un gato</option>
@@ -41,14 +41,20 @@
 						</div>
 					</div>
 					<div class="row">
-        		<div class="input-field offset-s1 col s10 padding2em">
-          		<input id="breed" placeholder="Ingresa tu edad" type="text" class="validate" disabled>
-							<label class="text-color">¿De que raza eres?</label>
+						<div class="input-field offset-s1 col s10 padding2em">
+							<select id="input-2">
+								<option value="" disabled selected>Selecciona una opcion</option>
+								<option value="dog">Soy un perro</option>
+								<option value="cat">Soy un gato</option>
+								<option value="rabbit">Soy un conejo</option>
+								<option value="hamster">Soy un hámster</option>
+							</select>
+							<label class="text-color">¿de que raza eres?</label>
 						</div>
-        	</div>
+					</div>
 					<div class="row">
 						<div class="input-field offset-s1 col s10 padding2em">
-							<select id="genre">
+							<select id="input-3" >
 								<option value="" disabled selected>Selecciona una opcion</option>
 								<option value="female">Soy una hembra</option>
 								<option value="male">Soy un macho</option>
@@ -58,7 +64,7 @@
 					</div>
 					<div class="row">
         		<div class="input-field offset-s1 col s10 padding2em">
-          		<input id="age" placeholder="Ingresa tu edad" type="number" class="validate">
+          		<input placeholder="Ingresa tu edad" id="age" type="text" class="validate">
 							<label class="text-color">¿Cuantos años tienes?</label>
 						</div>
         	</div>
@@ -66,7 +72,7 @@
 			</div>
 			<div class="row">
 				<div class="offset-s8 col s4 push-right">
-					<button id="next" type="btn" class="next-btn" disabled>SIGUIENTE</button>
+					<button id="next" type="btn" class="next-btn">SIGUIENTE</button>
 				</div>
 			</div>
 		</div>
