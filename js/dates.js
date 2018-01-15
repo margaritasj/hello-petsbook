@@ -53,6 +53,11 @@ $(document).ready(function() {
 
   $nextBtn.click(function() {
     if (validDir && validName && validPhone && validPhoto) {
+      localStorage.dir = $direction.val();
+      localStorage.human = $humanName.val();
+      localStorage.phone = $humanPhoto.val();
+      localStorage.photo = $humanPhoto.val();
+      
       window.location.href = 'complete.html';
     }
     
