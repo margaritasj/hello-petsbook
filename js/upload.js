@@ -23,6 +23,8 @@ $(document).ready(function() {
   }
 
   $nextBtn.click(function() {
-    window.location.href = '../views/complete.html';
+    if (validPhotoPet === true) {
+      window.location.href = 'dates.html';
+    }
   });
 });
