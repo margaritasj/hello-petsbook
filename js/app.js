@@ -21,3 +21,4 @@ $(document).ready(function() {
         (navigator.userAgent.match(/BlackBerry/i))
       );
     } */
+});
