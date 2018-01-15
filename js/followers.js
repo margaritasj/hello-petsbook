@@ -4,6 +4,3 @@ $(document).ready(function() {
   $username = $('#username');
   $avatar = $('avatar');
   $followBtn = $('follow-btn');
-
- 
-});
