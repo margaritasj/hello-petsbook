@@ -13,12 +13,14 @@ $(document).ready(function() {
 
   // expresion regular para verificar email
   var REGEX = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
+  var MAXLENGTH = 8;
 
   // validaciones
   $username.on('input', function() {
     if ($(this).val()) {
-      validateUser = true;
+      validUser = true;
       $email.attr('disabled', false);
+      console.log(validUser);
     }
   });
 
@@ -26,35 +28,41 @@ $(document).ready(function() {
     if (REGEX.test($(this).val())) {
       validemail = true;
       $password.attr('disabled', false);
+      console.log(validemail);
     }
   });
 
   $password.on('input', function() {
-    if ($(this.val().length === 8)) {
+    if ($(this).val().length === MAXLENGTH) {
       validPsw = true;
       $rePassword.attr('disabled', false);
+      console.log(validPsw);
     }
   });
 
   $rePassword.on('input', function() {
-    if ($password.val() === $rePassword.val()) {
+    if ($password.val().length === $rePassword.val().length) {
       validRePsw = true;
       activeBtn();
+      console.log(validRePsw);
     }
   });
 
   // funcion que activa el botón
   function activeBtn() {
-    $nextBtn.attr('disabled', false);
+    $next.attr('disabled', false);
   }
 
-  $next.on('click', function() {
+  $next.click(function(e) {
     if (validUser && validemail && validPsw && validRePsw) {
+      window.location.href = 'newsfeed.html';
+
       localStorage.username = $username.val();
       localStorage.email = $email.val();
       localStorage.password = $password.val();
+
       
-      window.location.href = '../views/profile.html';
     }
+    
   });
 });

@@ -24,6 +24,7 @@ $(document).ready(function() {
 
   $nextBtn.click(function() {
     if (validPhotoPet === true) {
+      localStorage.photoPet = $photo.val();
       window.location.href = 'dates.html';
     }
   });
