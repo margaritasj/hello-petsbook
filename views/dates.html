@@ -13,7 +13,7 @@
 	<!--Import materialize.css-->
 	<link href="../vendors/materialize/css/materialize.css" type="text/css" rel="stylesheet" />
 	<!-- Import style.css-->
-	<link href="../css/welcome.css" type="text/css" rel="stylesheet">
+	<link href="../css/register.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,49 +23,57 @@
 			<div class="row">
 				<div class="col s12 m12 l12 center-align">
 				<span class="principal-text padding1em">
-          <p>Espera Huellita, una última cosa</p><p>antes de acabar</p>
+          <p>Ahora Huellita, cuentanos...</p>
         </span>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col s12 m12 l12 center-align">
 					<div class="row">
-						<div class="input-field offset-s1 col s10 ">
-              <input id="age" type="text" class="validate">
-              <label>¿Cómo quieres que te llamemos?</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field offset-s1 col s10 ">
-              <input id="email" type="email" class="validate">
-              <label>Déjanos tu correo</label>
+						<div class="input-field offset-s1 col s10 m12 l12 ">
+              <input placeholder="Distrito" id="age" type="text" class="validate">
+              <label>¿En que dirección vives?</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field offset-s1 col s10 m12 l12 padding2em">
-<<<<<<< HEAD
-              <input id="password1" type="password" class="validate">
-=======
-              <input id="<ge" type="password" class="validate"><!-- se cambio el id a password para que no sea visible-->
->>>>>>> 095e549a467f8a8c37a83151505804c21d6d932f
-              <label>¿y, tu contraseña es?</label>
+              <input placeholder="Nombre y apellido" id="age" type="text" class="validate">
+              <label>¿Estás con un humano?¿como se llama?</label>
 						</div>
 					</div>
 					<div class="row">
 						<div class="input-field offset-s1 col s10 m12 l12 padding2em">
-<<<<<<< HEAD
-              <input id="password2" type="password" class="validate">
-=======
-              <input id="age" type="password" class="validate"><!-- se cambio el id a password para que no sea visible-->
->>>>>>> 095e549a467f8a8c37a83151505804c21d6d932f
-              <label>Repite tu contraseña ¿si?</label>
+              <input placeholder="fijo o celular" id="age" type="number" class="validate"><!-- type:number para q solo acepte numeros-->
+              <label>¿Tiene algún número para llamarte?</label>
 						</div>
 					</div>
+					<div class="row ">
+        	<div class="offset-s1 col s10 m12 l12">
+            <label>Dejanos conocer a tu humano guardián</label>
+          <div class="photo-container padding1em">
+            <form action="#">
+              <div class="file-field input-field">
+                <div id="photo-upload" class="btn photo-btn">
+                  <span><i class="material-icons">add_a_photo</i></span>
+                  <input id="subir-fotos" type="file"><!-- agregando funcionalidad para agrgar foto-->
+                </div>
+                <div class="file-path-wrapper ">
+                  <P>Sube una foto</P>
+                </div>
+								<!-- agrgando un div contenedor-->
+								<div class="col s12 contenedor-img">
+									<!-- aqui fotos-->
+								</div>
+              </div>
+            </form>
+          </div>
         </div>
+        	</div>
+				</div>
 			</div>
 			<div class="row">
-				<div class="offset-s8 col s4 push-right">
-					<button id="next" type="btn" class="next-btn btn disabled">LISTO</button>
+				<div class="offset-s8 col s4  push-right">
+					<button id="next" type="btn" class="next-btn">SIGUIENTE</button>
 				</div>
 			</div>
 		</div>
