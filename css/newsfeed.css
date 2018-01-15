@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+}
+/* Clases Reutilizables*/
+.padding2em {
+  padding: 2em;
+}
+.padding1em {
+  padding: 1em;
+}
+.padding {
+  padding-top: 1.2em;
+}
+.welcome-text {
+  text-align: center;
+}
+/* Clases para el avatar*/
+.avatar-xs {
+  width: 50px;
+  height: 50px;
+  border: 2px dashed #1de9b6;
+  margin-right: 0.2em;
+}
+/* Clases para los contenedor de posteo */
+.post-container {
+  background-color: #ffff;
+  border: 4px dashed #1de9b6;
+  height: 33vh;
+}
+.input-container {
+  height: 22vh;
+}
+.btn {
+	background-color: #1de9b6;
+	font-weight: 600;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #1de9b6;
+
+}
+/* publicaciones */
+
+.avatar-container-2 {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+label.label-icon {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+label.label-icon:hover,
+label.label-icon:focus {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.tabs .tab a {
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #1de9b6;
+}
+
+.tabs .indicator {
+  background-color: #1de9b6;
+}
+
+.padding-bottom {
+  padding-bottom: 1rem;
+}
+
+.btn {
+	background-color: #1de9b6;
+	font-weight: 600;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #1de9b6;
+}
+
+.wrap {
+  word-wrap: break-word; 
+  max-width:100%; 
+  width:100%;
+}
+
+/*Medias queries*/
+@media (min-width: 992px) {
+  .avatar-lg {
+    width: 200px;
+    height: 200px;
+    border: 0.3rem dashed #1de9b6;
+    margin-top: 2rem;
+  }
+  .counter {
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  .margin-top{
+    margin-top: 1rem;
+  }
+  .padding {
+    padding-top: 1.5rem;
+  }
+  .username p {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+  }
+  .square {
+    background-color: #ffffff;
+    height: 13rem;
+    width: 13em;
+    margin: 0.1rem;
+  }
+  .tabs .tab a {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+  }
+}

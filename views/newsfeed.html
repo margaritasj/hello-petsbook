@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>PETSBOOK</title>
+	<!--Import Favicon-->
+	<link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />
+	<!--Import Icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!--Import materialize.css-->
+	<link href="../vendors/materialize/css/materialize.css" type="text/css" rel="stylesheet" />
+	<!-- Import style.css-->
+	<link rel="stylesheet" type="text/css" href="../css/newsfeed.css">
+</head>
+
+<body>
+  <section>
+    <div class="container-homepage">
+      <div class="row">
+				<div class="col s2 m2 l2">
+						<div id="menu" class=" padding2em">
+								<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons ">menu</i></a>
+							</div>
+							<!-- sideNav -->
+							<ul id="slide-out" class="side-nav">
+								<li><div class="user-view">
+									<div class="background">
+										<img src="../assets/images/dogs-1.png">
+									</div>
+									<a href="#!user"><img class="circle" src="../assets/images/dog-perfil.jpg"></a>
+									<a href="#!name"><span class="black-text name"><strong class="username"></strong></span></a>
+								</div></li>
+								<li><a href="profile.html"><i class="material-icons">account_circle</i>Tu Perfil</a></li>
+							<li><a class="waves-effect" href="#!"><i class="material-icons">photo</i>Fotos</a></li>
+							<li><a class="waves-effect" href="#!"><i class="material-icons">plus_one</i>Seguidores</a></li>
+						</ul>
+		
+				<!-- sideNav end -->
+				</div>
+				<div class="col s10 m10 l10">
+					<div id="title" class=" padding1em">
+            <h4>Hola <strong class="username welcome-text"></strong></h4>
+					</div>
+					<div id="avatar" class="hide">
+						<div class="avatar">
+							<figure class="col s2 marginout">
+							<img src="../assets/images/dog-perfil.jpg" alt="" class="circle avatar-xs">
+							</figure>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="col s12 m12 l12">
+					<div class="padding2em">
+						<form class="col s12 m12 l12 post-container">
+							<div class="row">
+								<div class="input-field col s12 m12 l12 input-container black-text">
+									<textarea id="textarea-1" class="materialize-textarea"></textarea>
+									<label for="textarea-1">
+										<span class="padding">¿Que cosas divertidas hiciste hoy?</span>
+									</label>
+									<div class="row">
+										<div class="col s6">
+											<form action="#">
+              					<div class="file-field input-field">
+                					<div id="photo-upload">
+														<button class="btn waves-effect waves-light" type="submit">
+                  					<span><i class="material-icons">add_a_photo</i></span>
+														<input type="file">
+														</button>
+                					</div>
+                					<div class="file-path-wrapper">
+														<span class="black-text">Sube una foto</span>
+                					</div>
+												</div>
+											</form>
+										</div>
+										<div class="col s6">
+											<form action="#">
+              					<div class="file-field input-field">
+                					<div id="post-upload">
+														<button id="btn-post" class="btn waves-effect waves-light" type="submit">
+                  					<span><i class="material-icons">pets</i></span>
+														</button>
+                					</div>
+                					<div class="file-path-wrapper">
+														<span class="black-text">Deja tu huella</span>
+                					</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col s12 m12 l12">
+					<div class="padding2em">
+						<div class="row">
+							<div class="col s12 black-text">
+								<div id="publication"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+		</div>
+  </section>
+
+
+  <!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+	<!--Import materialize.js-->
+	<script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+	<!-- app.js-->
+	<script type="text/javascript" src="../js/newsfeed.js"></script>
+</body>
+
+</html>

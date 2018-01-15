@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   $('.btn-register').click(function() {
     event.preventDefault();
-    window.location.href = '../views/register.html';
+    window.location.href = '../hello-petsbook/views/login.html';
   });
 
   setTimeout(function() {
@@ -21,4 +21,6 @@ $(document).ready(function() {
         (navigator.userAgent.match(/BlackBerry/i))
       );
     } */
+
+    
 });

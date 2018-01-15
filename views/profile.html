@@ -23,7 +23,7 @@
 			<div class="nav-wrapper">
 				<ul>
 					<li>
-						<label class="label-icon return-icon" for="return">
+						<label id="arrow-back" class="label-icon return-icon" for="return">
 							<i class="material-icons padding-arrow">arrow_back</i>
 						</label>
 					</li>
@@ -57,16 +57,16 @@
 			<div class="row">
 				<div class="col s4 l4">
 					<span class="username center-align">
-						<p>Huellita</p>
+						<p class="user"></p>
 					</span>
 				</div>
 				<!-- indicador de estado de adopcion -->
 				<div class="col offset-s1 s7 offset-l4 l4">
 					<div class="selector">
-						<span>Me adoptaron</span>
+						<span id="status">Estado</span>
 						<div class="switch">
 							<label>
-								<input type="checkbox">
+								<input id="switch" type="checkbox">
 								<span class="lever"></span>
 							</label>
 						</div>
@@ -107,20 +107,15 @@
 						<a href="#photos">HuelliFotos</a>
 					</li>
 					<li class="tab col s4 l4">
-						<a href="#contacts">HuelliAmigos</a>
+						<a href="#contacts">HuelliDatos</a>
 					</li>
 				</ul>
-				<div id="notices" class="col s12"></div>
-				<div id="photos" class="col s12"></div>
-				<div id="contacts" class="col s12"></div>
-			</div>
-		</div>
-		</div>
-		<div class="container">
+				<div id="notices" class="col s12">
+				<div class="container">
 			<div class="row">
-				<div class="col s12 m12 l12">
+				<form class="col s12 m12 l12">
 					<div class="row padding">
-						<div class="input-field col s12 pull-right ">
+						<div class="input-field col s12 pull-right">
 							<br>
 							<textarea id="textarea-1" class="materialize-textarea padding">
 							</textarea>
@@ -156,16 +151,29 @@
 							</button>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 			<div class="container">
 				<div class="row padding">
-					<div class="col s12 m12 l12">
+					<div class="col s10 m12 l12">
 						<div id="publication">
 						</div>
 					</div>
 				</div>
 			</div>
+			<div id="photos" class="col s12"></div>
+			<div id="info" class="col s12">
+				<div class="container">
+					<div class="row padding">
+						<div class="col s10 m10 l10">
+							<div id="publication"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
 	</section>
 	<!--Import Firebase-->
 	<!--<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>-->
