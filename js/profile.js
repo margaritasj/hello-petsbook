@@ -3,7 +3,7 @@ $(document).ready(function() {
   // evento que regresa a la vista anterior
   $('#arrow-back').click(function() {
     window.location.href = 'newsfeed.html';
-  }),
+  });
 
   // Mostrar el nombre de usuario almacenado
   $(window).on('load', function() {
