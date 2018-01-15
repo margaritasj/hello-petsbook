@@ -16,6 +16,7 @@ body {
 .text-color {
   color: #1de9b6;
 }
+/* Clases Personalizadas */
 .principal-text {
   font-size: 30px;
   letter-spacing: 3px;
@@ -29,7 +30,7 @@ body {
 }
 .next-btn:hover {
   border: 2px solid #1de9b6;
-  background-color: #ffffff; 
+  background-color: #ffffff; ;
   color: #1de9b6;
   transition: all .6s ease-in-out;
 }
@@ -48,8 +49,9 @@ body {
   margin-bottom: 10px;
 }
 .photo-btn:hover, .voice-btn:hover  {
+  border: 
   background-color: #fff;
-  color: #1de9b6;
+  color: #1de9b6
 }
 .photo-btn i, .voice-btn i {
   font-size: 30px;
