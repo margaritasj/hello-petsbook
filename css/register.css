@@ -29,9 +29,9 @@ body {
   padding: 0.5em 1em 0.5em 1em;
 }
 .next-btn:hover {
-  border: 2px solid #1de9b6;
-  background-color: #ffffff; ;
-  color: #1de9b6;
+  border: 2px solid #fff;
+  background-color: #fffe5b; ;
+  color: #fff;;
   transition: all .6s ease-in-out;
 }
 /* Vista upload */
@@ -49,9 +49,9 @@ body {
   margin-bottom: 10px;
 }
 .photo-btn:hover, .voice-btn:hover  {
-  border: 
-  background-color: #fff;
-  color: #1de9b6
+  border: 2px dashed #fffe5b;
+  background-color: #fffe5b;
+  color: #fff;
 }
 .photo-btn i, .voice-btn i {
   font-size: 30px;

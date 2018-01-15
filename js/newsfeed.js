@@ -7,6 +7,8 @@ $(document).ready(function() {
   // funcion que llama al menu deslizable
   $('.button-collapse').sideNav();
 
+  // 
+  
   $(window).on('load', function() {
     $tag.append(localStorage.username);
   });
@@ -21,4 +23,6 @@ $(document).ready(function() {
     $('#textarea-1').focus();
   });
   
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
+
 });
